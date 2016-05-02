@@ -1,4 +1,5 @@
 $(function(){
+    //登录
     var user=$(".min-nav li:first");
     var login=$(".login");
     login.css("display","none");
@@ -11,6 +12,20 @@ $(function(){
             flag=true;
             login.css("display","none");
         }
-    })
+    });
+    //菜单按钮
+    var menubtn=$(".min-nav li:last-child");
+    var menu=$(".menu");
+    menu.css("display","none");
+    menubtn.click(function(){
+        if(flag){
+            flag=false;
+            menu.css("display","block");
+        }else{
+            flag=true;
+            menu.css("display","none");
+        }
+    });
+
 
 });

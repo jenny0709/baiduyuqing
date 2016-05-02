@@ -214,16 +214,17 @@
   bottom: 90px;
   background-image: url(../images/ship_1ad6734.png);
 }
-.con1 .footer1 .downbtn {
+.downbtn {
   width: 30px;
   height: 26px;
   position: absolute;
   left: 50%;
   bottom: 45px;
-  margin-left: -13px;
+  margin-left: -15px;
   z-index: 999;
   background-image: url(../images/arrow_aad9b25.png);
   animation: btn linear 0.5s infinite alternate;
+  cursor: pointer;
 }
 .con2 {
   width: 100%;
@@ -410,6 +411,7 @@
   background-image: url("../images/bubble_3b0f897.png");
 }
 .con4 .desc2 {
+  left: 340px;
   z-index: 999;
 }
 .con4 .right2 {
@@ -429,8 +431,37 @@
   padding-bottom: 20px;
 }
 @media screen and (max-width: 768px) {
-  .max-nav {
-    display: none;
+  .max-nav .middle-nav {
+    width: 100%;
+    background-color: #fff;
+  }
+  .max-nav .middle-nav ul {
+    width: 100%;
+  }
+  .max-nav .middle-nav ul li {
+    width: 90%;
+    height: 20px;
+    margin: 10px 15px;
+    border-bottom: 1px solid #3698E1;
+  }
+  .max-nav .middle-nav ul li a {
+    color: #0B67BE;
+  }
+  .max-nav .nav-help {
+    width: 100%;
+    margin-top: -10px;
+    background-color: #fff;
+  }
+  .max-nav .nav-help a {
+    display: block;
+    width: 90%;
+    height: 20px;
+    margin: 10px 15px;
+    border-bottom: 1px solid #3698E1;
+    color: #0B67BE;
+  }
+  .max-nav .nav-help a:last-child {
+    border-bottom: none;
   }
   .min-nav {
     width: 100%;
@@ -470,6 +501,43 @@
     line-height: 0;
     font-size: 0;
     clear: both;
+  }
+  .con1 .center .login {
+    right: -11px;
+    top: 102px;
+    z-index: 999999999;
+  }
+  .zi {
+    left: 5%!important;
+    background-size: 60%;
+    background-repeat: no-repeat;
+  }
+  .ship {
+    display: none!important;
+  }
+  .title2 {
+    left: 5%!important;
+    background-size: 60%;
+    background-repeat: no-repeat;
+  }
+  .desc2 {
+    display: none;
+  }
+  .footer2 {
+    display: none;
+  }
+  .right2 {
+    left: 96px!important;
+    background-size: 50%;
+  }
+  .fang {
+    display: none;
+  }
+  .con4 .right2 {
+    background-size: 36%;
+  }
+  .yuan4 {
+    display: none;
   }
 }
 @media screen and (min-width: 768px) {
@@ -530,6 +598,9 @@
   }
   .max-nav .nav-help a:last-child {
     color: #F0DA28;
+  }
+  .login {
+    display: block!important;
   }
 }
 @keyframes cloudmove {
