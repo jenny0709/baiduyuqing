@@ -514,8 +514,13 @@
     background-size: 60%;
     background-repeat: no-repeat;
   }
-  .ship,.desc2,.footer2,.fang,.yuan4{
+  .hill1,.desc2,.footer2,.fang,.yuan4{
     display: none!important;
+  }
+  .ship{
+    left: 30px!important;
+    bottom: 49px!important;
+    background-size: 80%!important;
   }
   .title2{
     left:5%!important;
@@ -523,7 +528,7 @@
     background-repeat: no-repeat;
   }
   .right2{
-    left: 96px!important;
+    left: 145px!important;
     background-size: 50%;
   }
   .con4{
@@ -597,6 +602,46 @@
     display: block!important;
   }
 }
+
+.swiper-slide-active .ship{
+  animation: ship 1s linear forwards;
+}
+.swiper-slide-active .title2,.swiper-slide-active .desc2{
+  animation: ship 1s linear forwards;
+}
+
+@keyframes ship{
+  0%{
+    left:280px;
+  }
+  100%{
+    transform: translateX(25px);
+  }
+}
+
+.swiper-slide-active .right2{
+  animation: right 1s linear forwards;
+}
+
+@keyframes right{
+  0%{
+    left:850px;
+  }
+  100%{
+    transform: translateX(-50px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 //云飘
 @keyframes cloudmove {
   100%{
