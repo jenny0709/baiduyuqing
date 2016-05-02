@@ -16,13 +16,7 @@ $(function(){
     var menubtn=$(".min-nav li:last-child");
     var menu=$(".menu");
     menubtn.click(function(){
-        if(flag){
-            flag=false;
-            menu.css({display:"block"},{zIndex:9999});
-        }else{
-            flag=true;
-            menu.css("display","none");
-        }
+        menu.slideToggle(500);
     });
 
 
