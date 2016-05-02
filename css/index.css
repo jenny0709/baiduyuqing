@@ -432,6 +432,7 @@
 }
 @media screen and (max-width: 768px) {
   .max-nav .middle-nav {
+    display: none;
     width: 100%;
     background-color: #fff;
   }
@@ -451,6 +452,7 @@
     width: 100%;
     margin-top: -10px;
     background-color: #fff;
+    display: none;
   }
   .max-nav .nav-help a {
     display: block;
@@ -503,8 +505,9 @@
     clear: both;
   }
   .con1 .center .login {
+    display: none;
     right: -11px;
-    top: 102px;
+    top: 100px;
     z-index: 999999999;
   }
   .zi {
@@ -512,7 +515,11 @@
     background-size: 60%;
     background-repeat: no-repeat;
   }
-  .ship {
+  .ship,
+  .desc2,
+  .footer2,
+  .fang,
+  .yuan4 {
     display: none!important;
   }
   .title2 {
@@ -520,24 +527,12 @@
     background-size: 60%;
     background-repeat: no-repeat;
   }
-  .desc2 {
-    display: none;
-  }
-  .footer2 {
-    display: none;
-  }
   .right2 {
     left: 96px!important;
     background-size: 50%;
   }
-  .fang {
-    display: none;
-  }
   .con4 .right2 {
     background-size: 36%;
-  }
-  .yuan4 {
-    display: none;
   }
 }
 @media screen and (min-width: 768px) {
@@ -545,6 +540,7 @@
     display: none;
   }
   .max-nav {
+    display: block!important;
     max-width: 1000px;
     height: 100%;
     margin: 0 auto;

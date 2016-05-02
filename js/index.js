@@ -2,7 +2,6 @@ $(function(){
     //登录
     var user=$(".min-nav li:first");
     var login=$(".login");
-    login.css("display","none");
     var flag=true;
     user.click(function(){
         if(flag){
@@ -16,11 +15,10 @@ $(function(){
     //菜单按钮
     var menubtn=$(".min-nav li:last-child");
     var menu=$(".menu");
-    menu.css("display","none");
     menubtn.click(function(){
         if(flag){
             flag=false;
-            menu.css("display","block");
+            menu.css({display:"block"},{zIndex:9999});
         }else{
             flag=true;
             menu.css("display","none");
