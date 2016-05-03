@@ -615,6 +615,7 @@
     left:280px;
   }
   100%{
+    -webkit-transform: translateX(25px);
     transform: translateX(25px);
   }
 }
@@ -628,15 +629,10 @@
     left:850px;
   }
   100%{
+    -webkit-transform: translateX(-50px);
     transform: translateX(-50px);
   }
 }
-
-
-
-
-
-
 
 
 
@@ -646,18 +642,21 @@
 @keyframes cloudmove {
   100%{
     -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
   }
 }
 //飞机
 @keyframes fly {
   100%{
     -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
   }
 }
 //按钮
 @keyframes btn {
   100%{
     -webkit-transform: translateY(10px);
+    transform: translateY(10px);
     opacity: 0.3;
   }
 }
@@ -665,6 +664,7 @@
 @keyframes zirotate {
   100%{
     -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
   }
 }
 
